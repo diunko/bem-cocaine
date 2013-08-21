@@ -40,8 +40,7 @@ if (app.get('env') == 'cocaine') {
 
 }
 
-var BEMHTML = require('./desktop.bundles/index/_index.bemhtml.js').BEMHTML,
-    BEMTREE = require('./desktop.bundles/index/index.bemtree.js').BEMTREE;
+var BEMTREE = require('./desktop.bundles/index/index.bemtree.js').BEMTREE;
 
 app.get('/', function(req, res) {
     BEMTREE.apply()
